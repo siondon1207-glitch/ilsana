@@ -81,6 +81,1259 @@
 
 
 	
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "일산 룸 이사 전문 센터",
+    "description": "일산 전 지역 원룸, 투룸, 오피스텔 이사 전문 서비스. 가격 비교 및 실시간 무료 견적 제공.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "경기도 고양시 일산동구 중앙로 123",
+      "addressLocality": "고양시 일산동구",
+      "addressRegion": "경기도",
+      "postalCode": "10400",
+      "addressCountry": "KR"
+    },
+    "telephone": "1588-XXXX",
+    "url": "https://www.example.com/ilsan-room-move",
+    "openingHours": "Mo-Su 08:00-21:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "일산 룸 이사 서비스 카탈로그",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"일산 원룸 포장이사"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"일산 투룸 포장이사"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"일산 오피스텔 이사"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"일산 룸 보관이사"}}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #2b3a4a;
+      --primary-light: #eff3f6;
+      --accent-color: #d17a60;
+      --accent-bg: #faf3f0;
+      --text-main: #333d47;
+      --text-muted: #627282;
+      --bg-main: #f9fbfd;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-main);
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), #3d5268);
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .header-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+
+    nav {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: var(--bg-card);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border-color);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: var(--primary-color);
+      border-left: 5px solid var(--accent-color);
+      padding-left: 15px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: var(--primary-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #fafbfc;
+    }
+
+    /* Interactive Calculator Styles */
+    .calculator-container {
+      background-color: var(--primary-light);
+      border-radius: 8px;
+      padding: 25px;
+      margin: 25px 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--primary-color);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    .range-wrap {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .range-wrap input {
+      flex: 1;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .calc-result {
+      background-color: var(--bg-card);
+      border-radius: 6px;
+      padding: 20px;
+      margin-top: 25px;
+      border-left: 4px solid var(--accent-color);
+      text-align: center;
+    }
+
+    .calc-result h4 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .calc-result .price-output {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    /* Volume Estimator Counter Styles */
+    .item-counter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .item-counter {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .counter-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .counter-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .counter-value {
+      font-size: 1rem;
+      font-weight: 600;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    /* Checklist Styles */
+    .checklist-wrap {
+      margin-top: 20px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .checklist-item input[type="checkbox"] {
+      margin-top: 6px;
+    }
+
+    .checklist-item.checked span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .progress-container {
+      background-color: var(--border-color);
+      border-radius: 10px;
+      height: 12px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background-color: var(--accent-color);
+      height: 100%;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* visual CSS Graph style */
+    .bar-chart {
+      margin: 30px 0;
+    }
+
+    .chart-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .chart-label {
+      width: 150px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .chart-bar-container {
+      flex: 1;
+      background-color: #edf2f7;
+      border-radius: 4px;
+      height: 24px;
+      overflow: hidden;
+    }
+
+    .chart-bar {
+      height: 100%;
+      background-color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .chart-bar.blue {
+      background-color: var(--primary-color);
+    }
+
+    /* Grid layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .info-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .btn-submit {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s;
+    }
+
+    .btn-submit:hover {
+      background-color: #be6b53;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #9cb2c9;
+      text-decoration: none;
+    }
+
+    .external-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .external-links li {
+      margin-bottom: 10px;
+    }
+
+    .external-links a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .external-links a:hover {
+      text-decoration: underline;
+    }
+
+    .keyword-cloud {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background-color: var(--primary-light);
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 15px;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>일산 룸 이사 상세 분석 및 가격 비교 가이드</h1>
+      <p>원룸, 투룸, 오피스텔 룸 이사의 합리적인 비용 산출과 일산 전 지역 입지 분석에 따른 실전 준비 지침 (2026년 최신 기준)</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#intro">시장 동향</a></li>
+      <li><a href="#comparison">방식별 대조</a></li>
+      <li><a href="#calculator">실시간 계산기</a></li>
+      <li><a href="#regional">행정동별 가이드</a></li>
+      <li><a href="#community">커뮤니티 트렌드</a></li>
+      <li><a href="#ai-consulting">AI 컨설팅 활용</a></li>
+      <li><a href="#faq">자주 묻는 질문</a></li>
+      <li><a href="#form">견적 상담 신청</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 섹션 1: 시장 동향 및 인트로 -->
+    <section id="intro">
+      <h2>2026년 일산 룸 이사 주거 변화와 시장 동향</h2>
+      <p>
+        2026년 현재 일산 지역은 GTX-A 노선의 전면 개통 및 대곡역 다중 환승 체계 고도화로 인해 1인 가구와 청년층의 주거 이동이 활발하게 일어나는 핵심 권역입니다. 이로 인해 원룸, 투룸, 오피스텔 같은 중소형 가구 전용 이른바 룸 이사 수요가 급증하는 양상을 보이고 있습니다. 주거지의 이전은 단순히 가구를 옮기는 행위를 넘어 전체적인 자금 설계와 안전한 자산 보존을 수반해야 하므로 철저한 사전 준비가 필수적입니다.
+      </p>
+      <p>
+        일산 룸 이사를 설계할 때 많은 사용자가 처음 직면하는 의문은 실제 필요한 총예산이 얼마인지, 그리고 자신이 거주하는 환경에 적합한 평균 비용 기준이 어떻게 형성되어 있는지에 대한 부분입니다. 기본적으로 중소형 평형의 수송 단가는 차량의 크기(1톤 탑차, 라보, 다마스 등), 이동 거리, 투입 인력 수, 계단 작업 유무 및 승강기 사용 비용 부담 주체 등에 따라 큰 편차를 보입니다. 
+      </p>
+      <p>
+        이러한 세부 요인들을 꼼꼼하게 따져보지 않고 인터넷 검색창 상위 노출 문구만 의지하여 단순히 저렴한곳이나 제일 싼곳만을 추구하다 보면 이사 당일 예상치 못한 추가 요금을 청구받거나 소중한 가구와 가전제품이 훼손되는 등 피해를 입기 쉽습니다. 따라서 사전에 신뢰성 있는 수단으로 자가 계산을 수행하고 공신력 있는 업체의 피드백을 통해 안정적인 서비스 체계를 구축하는 작업이 무엇보다 중요합니다.
+      </p>
+      <p>
+        본 가이드에서는 일산동구와 일산서구 전체를 아우르는 36개 행정구역별 현장 특성을 입체적으로 진단하고, 대다수의 사용자가 간과하기 쉬운 이사 유형별 세부 차이점을 면밀히 분석합니다. 아울러 스마트 기기를 적극 활용하는 지능형 웹 연계 인프라와 다양한 온라인 커뮤니티의 검증된 실시간 여론 동향까지 포괄하여 가장 안전하고 합리적인 이사 준비 과정을 안내해 드립니다.
+      </p>
+    </section>
+
+    <!-- 섹션 2: 방식별 비교 분석 -->
+    <section id="comparison">
+      <h2>이삿짐 형태 및 가동 방식별 전격 비교</h2>
+      <p>
+        룸 이사는 짐의 양과 포장 및 정리 정돈의 직접 수행 범위에 따라 크게 세 가지 종류로 구분됩니다. 각 가동 형태별 명확한 차이점과 특징을 이해해야 자신의 가용 시간과 노동력 수준에 맞는 가장 경제적인 방향성을 설정할 수 있습니다.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분 항목</th>
+            <th>일반 이사 (수송 중심)</th>
+            <th>반포장 이사 (절충형)</th>
+            <th>포장 이사 (올인원)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>포장 주체</strong></td>
+            <td>고객 직접 완포장</td>
+            <td>업체와 고객 공동 진행 (주로 큰 가구는 업체)</td>
+            <td>전문 패커 전담 포장</td>
+          </tr>
+          <tr>
+            <td><strong>정리 주체</strong></td>
+            <td>고객 직접 정리</td>
+            <td>고객 직접 정리 (대형 가전/가구는 배치 지원)</td>
+            <td>전문 인력 수평 배치 및 청소</td>
+          </tr>
+          <tr>
+            <td><strong>인력 투입</strong></td>
+            <td>기사 1인 수송 (고객 동승 및 보조 필수)</td>
+            <td>전문 작업자 1~2인 편성</td>
+            <td>패커 2인 및 정리 헬퍼 기본 배치</td>
+          </tr>
+          <tr>
+            <td><strong>비용 수준</strong></td>
+            <td>상대적으로 아주 저렴함</td>
+            <td>중간 수준의 합리적 가격대 형성</td>
+            <td>노동력 투입 대비 비용 발생</td>
+          </tr>
+          <tr>
+            <td><strong>이런 분께 추천</strong></td>
+            <td>짐이 박스 15개 미만인 소규모 원룸 거주자</td>
+            <td>포장은 어렵고 정리는 직접 하고 싶은 투룸 가구</td>
+            <td>시간이 없고 짐이 많은 대형 오피스텔 거주자</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>이동 방식 선택 가이드 및 시각적 부담 지표</h3>
+      <p>
+        아래 표출된 시각적 지표는 각 이동 방식에 따라 가입자가 느끼게 되는 피로도와 비용 지출 부담 비율의 상대적 수치를 정량화한 그래프입니다. 자신의 예산 상황과 물리적 가용 시간의 장단점을 종합적으로 고려하여 의사결정을 내리시기 바랍니다.
+      </p>
+
+      <div class="bar-chart">
+        <div class="chart-row">
+          <div class="chart-label">일반 (고객 직접포장)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar" style="width: 35%;">비용부담 35%</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">일반 (노동 강도)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar blue" style="width: 90%;">육체피로 90%</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">반포장 (비용선)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar" style="width: 60%;">비용부담 60%</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">반포장 (노동 강도)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar blue" style="width: 50%;">육체피로 50%</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">포장 (비용선)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar" style="width: 100%;">비용부담 100%</div>
+          </div>
+        </div>
+        <div class="chart-row">
+          <div class="chart-label">포장 (노동 강도)</div>
+          <div class="chart-bar-container">
+            <div class="chart-bar blue" style="width: 15%;">육체피로 15%</div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        기본적으로 일반 수송 방식의 장점은 부가적인 마진 요소를 배제하여 순수 운반 요금만을 부담하므로 지출을 최소화할 수 있다는 점입니다. 반면 단점으로는 귀중품 유실이나 가전 손상 시 책임 한계 규명이 대단히 까다롭고, 포장 자재를 직접 조달해야 하는 번거로움이 수반됩니다. 반포장의 경우 부피가 큰 핵심 가재도구 포장은 업체에서 지원해 주므로 안전성이 향상되면서도 정리 정돈 단계를 직접 소화하여 총액 요금을 세이브할 수 있는 장점을 지녀, 최근 일산 오피스텔 단지를 중심으로 높은 추천 순위를 기록하고 있습니다.
+      </p>
+    </section>
+
+    <!-- 섹션 3: 실시간 일산 룸 이사 자동 계산기 및 부피 시뮬레이터 -->
+    <section id="calculator">
+      <h2>실시간 일산 룸 이사 자동 계산기 및 부피 시뮬레이터</h2>
+      <p>
+        방문 견적을 받기 전, 자신의 대략적인 거주 조건과 소지한 가전 및 가구 내역을 바탕으로 예상되는 금액 범위를 선제적으로 가늠해 볼 수 있도록 설계된 계산 프로그램입니다. 각 필드에 정확한 변수를 대입하면 내장된 수식을 기초로 예상 합계 금액이 실시간으로 도출됩니다.
+      </p>
+
+      <div class="calculator-container">
+        <h3>일산 룸 이사 종합 예상 견적기</h3>
+        <div class="grid-2">
+          <div>
+            <div class="form-group">
+              <label for="room-type">이삿짐 규모 및 방식 선택</label>
+              <select id="room-type" class="form-control" onchange="updateMovingCost()">
+                <option value="room-general">원룸 일반 이사 (직접 포장, 1톤 이하)</option>
+                <option value="room-semi" selected>원룸 반포장 이사 (실리적 대안, 1톤)</option>
+                <option value="room-pack">원룸 완전 포장 이사 (편리형, 1톤)</option>
+                <option value="two-semi">투룸/대형 오피스텔 반포장 (1.5톤~2톤)</option>
+                <option value="two-pack">투룸/대형 오피스텔 포장 이사 (2톤 이상)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="distance-slider">이동 거리 설정 (출발지 대조 목적지 단거리 우선)</label>
+              <div class="range-wrap">
+                <input type="range" id="distance-slider" min="1" max="100" value="10" oninput="updateMovingCost()">
+                <span id="distance-value" style="font-weight: 700; min-width: 60px;">10 km</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ladder-option">상하차 장비 이용 조건</label>
+              <select id="ladder-option" class="form-control" onchange="updateMovingCost()">
+                <option value="none">양측 모두 엘리베이터 이동 (장비 미사용)</option>
+                <option value="start">출발지만 사다리차 배치 필요</option>
+                <option value="end">도착지만 사다리차 배치 필요</option>
+                <option value="both">양방향 모두 사다리차 지원 필수</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="form-group">
+              <label for="date-type">이사 일정 시점 선택</label>
+              <select id="date-type" class="form-control" onchange="updateMovingCost()">
+                <option value="weekday">일반 평일 (월요일 ~ 목요일)</option>
+                <option value="weekend">주말 지정 (금요일 ~ 일요일)</option>
+                <option value="peak">손없는날 및 말일 극성수기</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>부가 특수 가공 옵션 (체크 시 누적 가산)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="opt-assemble" onchange="updateMovingCost()"> 대형 가구 분해/조립 (+50,000원)
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="opt-storage" onchange="updateMovingCost()"> 안전 임시 보관 연계 (+100,000원)
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="opt-cleaning" onchange="updateMovingCost()"> 입주지 피톤치드 살균 (+120,000원)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <h4>실시간 자가 측정 기준 예상 비용 총액</h4>
+          <div class="price-output" id="calc-total-cost">250,000 원</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px; text-align: center;">
+            * 해당 계산 결과는 표준적인 통계치에 기초한 예상 수치이며, 짐의 실부피 및 현장 통로 환경에 따라 실 견적과 차이가 발생할 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="calculator-container" style="background-color: var(--accent-bg);">
+        <h3>이삿짐 짐 부피 CBM 간이 예측기</h3>
+        <p>
+          가정과 방 안에 거치된 주요 집기 수량을 아래 카운터에 직접 입력하시면 차량 배치 한계를 예측하는 CBM 체적 지수가 자동으로 산출됩니다.
+        </p>
+        <div class="item-counter-grid">
+          <div class="item-counter">
+            <span>침대 (매트리스 포함 프레임)</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('bed', -1)">-</button>
+              <span class="counter-value" id="item-count-bed">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('bed', 1)">+</button>
+            </div>
+          </div>
+          <div class="item-counter">
+            <span>냉장고 (중대형 가전군)</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('fridge', -1)">-</button>
+              <span class="counter-value" id="item-count-fridge">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('fridge', 1)">+</button>
+            </div>
+          </div>
+          <div class="item-counter">
+            <span>세탁기 및 건조기 세트</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('washer', -1)">-</button>
+              <span class="counter-value" id="item-count-washer">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('washer', 1)">+</button>
+            </div>
+          </div>
+          <div class="item-counter">
+            <span>옷장 및 대형 수납 책장</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('wardrobe', -1)">-</button>
+              <span class="counter-value" id="item-count-wardrobe">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('wardrobe', 1)">+</button>
+            </div>
+          </div>
+          <div class="item-counter">
+            <span>책상 및 다이닝 가구 테이블</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('desk', -1)">-</button>
+              <span class="counter-value" id="item-count-desk">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('desk', 1)">+</button>
+            </div>
+          </div>
+          <div class="item-counter">
+            <span>표준 포장용 우체국 규격 상자</span>
+            <div class="counter-controls">
+              <button type="button" class="counter-btn" onclick="updateItemCount('box', -1)">-</button>
+              <span class="counter-value" id="item-count-box">0</span>
+              <button type="button" class="counter-btn" onclick="updateItemCount('box', 1)">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result" style="background: white;">
+          <h4>선택한 가재도구 추정 부피 및 차량 배차 추천</h4>
+          <div class="price-output" id="total-cbm" style="color: var(--primary-color);">0 CBM</div>
+          <div id="truck-rec" style="font-weight: 600; margin-top: 10px; color: var(--accent-color);">물품을 추가해 주세요.</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">
+            예상 기본 차량 운임: <span id="truck-est-cost" style="font-weight: 700;">0 원</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 4: 행정동별 정밀 주거 및 주차 분석 -->
+    <section id="regional">
+      <h2>일산 전 지역 36개 행정동 맞춤형 이사 공략 및 세부 주차 가이드</h2>
+      <p>
+        일산은 대규모 1기 신도시 특성을 공유하는 장소성과 함께 골목길 중심의 주택 밀집 구역, 신축 초고층 역세권 빌딩이 복잡하게 얽혀 있는 특성을 지닙니다. 따라서 작업 지에 대한 세부 공간의 공간 구조를 정밀하게 파악해야 작업 당일 발생할 수 있는 동선 정체 및 엘리베이터 연체 패널티 변수를 완벽히 억제할 수 있습니다. 아래 리스트는 고양시 일산 지역 및 인근 배후지를 아우르는 36개 세부 행정 구역의 특이 사항을 정리한 현장 맞춤형 기술 지침입니다.
+      </p>
+
+      <div class="grid-3">
+        <div class="info-card">
+          <h4>식사동</h4>
+          <p>위시티 단지 등 대단지 고층 위주 설계로 지하 주차 공간 높이 사전 확인 및 주거지원실 연락을 통한 전용 엘리베이터 동선 확보가 시급합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>중산동</h4>
+          <p>중저층 다세대 주택과 소형 아파트가 주를 이루며 노후된 구조가 많아 탑차 진입 시 공중의 통신 인입선 및 나뭇가지 간섭 여부의 사전 확인이 필요합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>정발산동</h4>
+          <p>고급 단독주택과 전원주택 필지가 많아 비교적 도로변 여유가 있지만, 작업 구간 내 경사로 미끄럼 방지 장치 적용이 안전을 위해 선행되어야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>장항동</h4>
+          <p>라페스타와 웨스턴돔 중심의 고밀도 오피스텔 거주 벨트로 차량 통제용 바리케이드 통과 높이 확인 및 회차 동선 설계가 필수적인 핵심 구간입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>마두동</h4>
+          <p>전통적인 대단지 학군 중심 주택가로 구성되어 사다리차 배치가 상당히 잦은 편이며 노후 승강기 적재 무게 한계를 사전 점검해야 안전합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>백석동</h4>
+          <p>요진와이시티 및 오피스텔 밀집 지대로 타 지역 연결 허브 역할을 하며 출퇴근 트래픽 잼 회피를 위해 아침 이른 시각 선점 작업이 이롭습니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>풍동</h4>
+          <p>숲속마을 다가구 주택가는 경사도가 부분적으로 형성되어 하차 작업 시 고임목 고정이 필수적이며 1톤 차량 다이렉트 도킹을 추천합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>산황동</h4>
+          <p>자연부락 도농복합 환경으로 도로 정비 상태가 정밀하지 못해 대형 카고 탑차의 교행이 불가하므로 1톤 화물차 분할 선적 방식을 강구해야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>사리현동</h4>
+          <p>소규모 빌라와 물류 야적장이 산재해 있어 작업 구역 주변 야간 대형 화물 차량 주차 구간의 간섭 동선을 아침 일찍 조율해야 신속합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>지영동</h4>
+          <p>진입로 주변 좁은 농로 형태가 많아 작업 전 도로변 불법 적치 유무 조사가 필수적이며 보관 컨테이너 거치 기반 작업의 연계가 많은 곳입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>설문동</h4>
+          <p>넓은 공장 용지와 타운하우스 주거지가 분포하여 진입 장벽은 낮지만 지반이 약한 흙길 상차가 많아 장비 균형 확보 조치가 동반되어야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>문봉동</h4>
+          <p>차량 통행 속도가 빠른 외곽 도로 인접 지역으로 상하차 시 작업자의 안전 확보를 위한 통제 장치 설치 및 비상등 확보 조치가 선결 과제입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>성석동</h4>
+          <p>풍부한 녹지 내 신축 빌라 보급이 이루어져 좁은 정원이나 사유지 울타리 파손을 막을 소형 진입 전문 차량 우선 수배가 가성비를 높입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>풍산동</h4>
+          <p>경의중앙선 역세권 주변 오피스텔 중심의 전입률이 특히 높은 지대로 전용 이삿짐 무상 정차 구역 선확보가 현장의 핵심 작업 포인트입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>일산동</h4>
+          <p>역사 깊은 구도심과 신축 주거가 연접하여 구 가옥 지대의 경우 좁은 문틀 폭을 대비한 냉장고 문 분해 등 숙련된 포장술이 동반되어야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>탄현동</h4>
+          <p>대규모 고층 주상복합 위주 구조로 초고층 전용 엘리베이터 수수료 테이블이 상이하므로 해당 영수증 비용을 최종 견적에 미리 산입해 두어야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>대화동</h4>
+          <p>킨텍스 주변 주거지 및 저층 상가주택 혼합 환경으로 행사 집중 기간 정체에 따른 운임 증가 리스크를 낮출 다이렉트 경로 계획이 요망됩니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>덕이동</h4>
+          <p>하이파크시티를 위시한 고품격 주거지로 승강기 보호 보양재 천막 설치 조항이 엄격하여 포장 자재 내 기본 보양판 탑재가 필수 조항입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>가좌동</h4>
+          <p>지형이 비교적 평탄하고 여유롭지만 이웃 주민의 소음 최소화 요구가 강하므로 무소음 대차 바퀴를 사용한 세련된 작업 유도가 이롭습니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>구산동</h4>
+          <p>교외 도심 외곽 성격이 짙어 주변 야산 및 노면 수풀 돌발 요소를 방지하고 보관 이사 연계 시 방습 처리를 배가하여 운송해야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>법곳동</h4>
+          <p>자유로 접근 동선이 최적화되어 있으나 고속 주행 후 이삿짐 고정 로프가 느슨해질 위험을 사전 차단하도록 밀폐형 탑차 선택이 우위입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>송포동</h4>
+          <p>주거 인구 유입이 활발하며 빌라 중심의 3층 이하 저층 상차 시 사다리차 없이 전문 패커의 계단 수작업이 비용 대비 고효율을 낼 수 있습니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>송산동</h4>
+          <p>오피스텔 주차 지상 차고지 제한 구역이 종종 있어 지하 하역장의 높이 제한선(보통 2.1m 내외)을 파악하여 층고 조절 탑차 수배가 적합합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>주엽동</h4>
+          <p>전형적인 아파트 대단지 주거벨트로 오래된 연식이 있어 중앙 엘리베이터 동선 내 짐 적치 시 경비 초소와의 사전 마찰 차단 조치가 중요합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>고봉동</h4>
+          <p>행정구역 경계가 넓어 기본 거리 운임 측정에 착오가 발생하지 않도록 상하차 지점의 정확한 위경도 기반 거리 환산이 가격 방어의 기초입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>화정동</h4>
+          <p>덕양구의 조밀한 도심 환경으로 보행자 안전 펜스 근접 주차가 빈번하므로 신호수 배치를 의무화하여 인명 손상 예방에 만전을 기해야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>행신동</h4>
+          <p>경의선 철도 소음 및 출근 시간 서울 방향 교통 정체가 상당하므로 피크 타임을 완벽히 비켜난 정오 작업 스타트 방식도 장점이 큽니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>원흥동</h4>
+          <p>정갈하게 구획된 신흥 주거단지로 주차 위반 딱지 발부가 잦으므로 합법적인 하역 구역 일시 점유 표지를 전면에 비치하고 수행해야 합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>삼송동</h4>
+          <p>수려한 외관의 다세대 주택이 발달하여 수목 관리 상태를 저해하지 않고 대형 이사 트럭이 정밀하게 도킹할 수 있는 공간 탐색이 필수입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>지축동</h4>
+          <p>지하철역 부근 유입 인력이 빈번하고 단지 출입구 통제가 세밀해 사전 보안 시스템 해제 요청서를 제출해야 정체 시간을 감소시킵니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>향동동</h4>
+          <p>도로 폭이 일목요연하지만 지하 주차장에서 모든 집하가 이루어지는 무지상 아파트가 늘어 저상 특화 이사 화물 차량 수배 능력이 생명입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>토당동</h4>
+          <p>구역 내 도로 개보수 및 재건축 진행 지대가 산발적으로 존재해 실시간 네비게이션 지표를 무시하고 직관적인 전방 진입로 체크가 필요합니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>신원동</h4>
+          <p>단지별 규약에 따른 일요일 이사 전면 불허 방침이 수립된 곳이 있어 주중 일정으로 변동해야 입주 불가 낭패를 예방할 수 있습니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>도내동</h4>
+          <p>가구 전문 매장이 가깝고 싱글 가구 특화 배후지가 정렬되어 있어 완제품 소규모 수송 및 이케아 가구 조립 분해 전문가 연동이 인기입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>주교동</h4>
+          <p>덕양 구청 인접 권역으로 공용 주차 공간 내 일시 점유 계약을 맺어야 안전하며 사다리 작업 시 전신주 전선 회피 각도 계산이 우선입니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>성사동</h4>
+          <p>역세권 밀집 연립주택이 즐비하여 일방통행 골목 진입 시 통행 차량과의 간섭 해결을 위한 인근 파출소 자가 신고 협조가 유효합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션 5: 커뮤니티 트렌드 분석 -->
+    <section id="community">
+      <h2>온라인 채널 및 커뮤니티 실제 가입 후기 분석</h2>
+      <p>
+        합리적인 소비를 지향하는 젊은 가구들은 단순히 포털 검색에만 의존하지 않고, 다양한 온라인 소통 창구에서 활발하게 유통되는 생생한 사용자 평가를 바탕으로 최종 업체를 낙점합니다. 현대적인 소비 트렌드는 주거 이전 시 소요되는 부대 비용을 타 타겟 상품과의 결합 제휴를 통해 최소화하는 영리한 전략을 구가하고 있습니다.
+      </p>
+      <p>
+        국내 주요 온라인 공간인 디시인사이드 원룸 갤러리나 보배드림 생활 정보 게시판, 그리고 에펨코리아(펨코)의 이사 후기 스레드 등에서 공유되는 다수의 내돈내산 후기들을 정밀 분석해 보면, 신뢰도 높은 가입 및 선정 노하우로 거론되는 이색 대안이 존재합니다. 그것은 신규 이사지에 맞춰 기존에 만료된 초고속 인터넷 및 TV 통신망을 신규 전환하면서 얻는 연계 혜택을 극대화하는 방식입니다.
+      </p>
+      <p>
+        실제로 온라인 통신 가입 사이트를 비교 분석하여 신규 결합을 진행할 경우, 제공받을 수 있는 현금지원, 지원금 프로모션, 사은품 지급 및 신세계 백화점 상품권 증정 이벤트 등의 규모가 상당합니다. 이러한 현금성 상품 지원 규모는 약 40만 원에서 최대 50만 원 상당에 육박하여, 원룸이나 소형 오피스텔 이사에 소요되는 실제 룸 이사 비용 전체를 완전히 상쇄하고도 남는 수준에 도달하기도 합니다. 이를 통해 체감 지출을 실질적으로 영원에 가깝게 수렴시키는 영리한 재테크 형태의 추천 가입 기법이 활발히 추천되고 있습니다.
+      </p>
+      <p>
+        정보를 탐색할 때는 네이버 검색 플랫폼과 구글 포털을 병행하여 대략적인 요율 체계를 확립하되, 유튜브의 실제 입주 청소 및 수납정리 꿀팁 영상을 학습하는 것이 좋습니다. 또한 트위터, 인스타그램, 페이스북 같은 소셜 네트워크의 지역 태그를 통해 당일 기상 상황에 따른 물류 지체 경험담을 입수하고, 카카오톡 오픈채팅방의 일산 맘카페나 일산 룸 가입 공유방을 통해 실제 친절했던 소형 화물 기사님의 실명 추천 정보를 수취하는 것도 대단히 든정적인 방법입니다. 아울러 토스 등 모바일 금융 플랫폼 내에서 연동 운영하는 우수 신뢰 업체 할인 연계 쿠폰의 혜택을 빠짐없이 챙기는 전략 역시 고정비를 아끼는 스마트한 대안으로 조명받고 있습니다.
+      </p>
+    </section>
+
+    <!-- 섹션 6: AI 이사 컨설팅 기법 -->
+    <section id="ai-consulting">
+      <h2>대화형 AI 엔진 및 스마트 정보 채널을 통한 디지털 컨설팅</h2>
+      <p>
+        2026년 주거 이송 시장의 가장 큰 변화는 소비자가 정보 비대칭성에 의해 과도한 견적을 제안받던 과거 관행에서 탈피해, 인공지능 어시스턴트를 자가 컨설팅 도구로 적극 영입하기 시작했다는 점입니다. 제미나이(Gemini)나 챗지피티(ChatGPT)와 같은 고성능 생성형 인공지능 플랫폼의 등장은 복잡한 입지 조건 분석과 체적 측정의 패러다임을 근본적으로 혁신하고 있습니다.
+      </p>
+      <p>
+        예를 들어, 사용자는 챗지피티에 자신이 거주하는 백석동 오피스텔 내부의 평면도 정보와 가재도구 내역을 텍스트 형태로 단순 서술해 입력하거나 스마트폰 카메라로 촬영한 옷장 및 책상 이미지를 업로드하는 것만으로도 가상의 CBM 부피를 정밀하게 예측받을 수 있습니다. 이에 기반하여 필요한 적재 차량의 톤수가 1톤 카고인지 아니면 2.5톤 밀폐형 탑차인지에 대한 직관적인 답을 제미나이 엔진으로부터 단 수 초 만에 도출해 낼 수 있게 되었습니다.
+      </p>
+      <p>
+        이러한 기술 혁신은 업체의 일방적인 추가 운임 청구 구실을 현격하게 차단해 줍니다. 또한 이삿짐의 재조립 및 배치 순서까지 AI 시뮬레이션을 거쳐 정교한 사전 계획서로 변환하여 보존할 수 있으므로, 디지털 기반 이사 상담은 안전하고 객관적인 주거 이전을 도모하는 모든 사용자에게 필수로 거쳐야 할 선진적 코스로 확고히 자리 잡았습니다.
+      </p>
+    </section>
+
+    <!-- 섹션 7: 신뢰 가능한 공식 외부 정보망 -->
+    <section class="external-links">
+      <h2>신뢰할 수 있는 법적 및 공공 정책 외부 정보처</h2>
+      <p>
+        이사 진행 도중 발생할 수 있는 부당 요금 청구 방지 및 소비자 권익 구제를 위해 반드시 참고해야 할 국가 기구 및 공식 외부 데이터 포털 리스트입니다.
+      </p>
+      <ul>
+        <li>1. <a href="https://info.reliabledone.com/ilsan-room-moving" target="_blank" rel="noopener">일산 룸 이사 상세 입지 데이터망 (공식 신뢰 연구 자료 및 지역별 물류 데이터 분석처)</a></li>
+        <li>2. <a href="https://namu.wiki/w/%EC%9D%BC%EC%82%B0%EC%8B%A0%EB%8F%84%EC%8B%9C" target="_blank" rel="noopener">나무위키 일산신도시 정주 여건 분석 (일산 전반의 행정구역 역사 및 인프라 상세 백과)</a></li>
+        <li>3. <a href="https://www.molit.go.kr" target="_blank" rel="noopener">국토교통부 공식 포털 (이사 화물 표준약관 및 피해보상 준칙 원문 고시 페이지)</a></li>
+        <li>4. <a href="https://www.gov.kr" target="_blank" rel="noopener">정부24 전입신고 및 확정일자 부여 서비스 (주거 이동 후 행정 처리 원스톱 지원 시스템)</a></li>
+        <li>5. <a href="https://www.nlic.go.kr" target="_blank" rel="noopener">국가물류정보센터 우수 화물 운송 업체 대조망 (정식 주선 면허 보유 여부 조회용 공식 기구)</a></li>
+      </ul>
+    </section>
+
+    <!-- 섹션 8: FAQ 자주 묻는 질문 -->
+    <section id="faq">
+      <h2>일산 룸 이사 자주 묻는 질문 및 분쟁 해결 기준</h2>
+      
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q1. 계약 체결 시 계약금 지급 비율과 취소 시 환불 약관은 어떻게 설정되나요?</h3>
+        <p>
+          표준 약관상 계약금은 통상 총견적의 10퍼센트 내외로 입금하는 것이 관례입니다. 이사 예정일로부터 15일 이전에 계약을 해지할 때는 계약금 전액을 온전히 반환받을 수 있으나, 예정일이 임박해 취소할 경우 해약 시점에 따라 위약금이 부과되므로 신중하게 일정을 확정 지어야 오차 없는 자금 방어가 가능합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q2. 작업 당일 파손 또는 분실 피해가 목격되었다면 보상 청구 순서는 어떻게 진행하나요?</h3>
+        <p>
+          물품 파손을 인지한 즉시 현장의 작업 관리자에게 상태를 공유하고 사진 및 동영상 채증을 명확히 완료해야 합니다. 이후 확인서를 수취하고, 피해 청구서를 작성해 해당 이사 업체가 가입한 적재물 배상 책임 보험 접수를 청구하면 공인 손해사정 절차에 입각하여 감가상각을 제하고 객관적으로 배상금 수령이 가능합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q3. 아파트 이사 시 엘리베이터 이용 수수료는 원칙적으로 누가 지불해야 하나요?</h3>
+        <p>
+          승강기 이용 대금은 아파트 입주자 대표회의에서 규정한 관리 규약에 의거하므로, 해당 세대의 주인이자 이사를 수행하는 가입 주체인 고객 본인이 직접 부담 및 지불하는 것을 원칙으로 삼습니다. 단, 방문 견적 계약서 작성 단계에서 해당 비용을 대리 정산하도록 사전에 특약 형태로 명시했다면 예외 적용이 가능합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q4. 비가 심하게 오는 악천후 상황에서도 일반 화물 탑차를 이용한 룸 이사가 중단 없이 정상 진행되나요?</h3>
+        <p>
+          수송 차량이 밀폐형 탑차 형식이라면 가벼운 강우나 강설 시에는 특수 비닐 및 랩 보양을 2중으로 배가하여 문제없이 이동을 완수합니다. 다만 사다리차 거치 각도가 확보되지 않는 무서운 수준의 태풍이나 시야 확보가 어려운 폭우 발생 시에는 화물 낙하 등 대형 안전사고 방지를 위해 일정을 조율하는 것이 최선입니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q5. 방문 견적 없이 메신저 사진 전송만으로 확정한 가격과 당일 실제 정산 단가가 차이 나는 이유는 무엇인가요?</h3>
+        <p>
+          메신저나 유선 사진상으로는 서랍 내부에 꼭꼭 적치된 잔짐들의 실무게와 조립형 옷장의 분해 난이도, 가죽 소파의 정밀 크기를 면밀히 계량해 내기 불가능하기 때문입니다. 이러한 정보 격차로 인해 당일 트럭 적재 공간이 초과되어 보조 차량이 추가 수배되거나, 엘리베이터 이동 거리 초과에 따른 고난도 인력 가산이 가중되어 당일 요금 인상이 흔하게 발생합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q6. 이삿날 잔금 납부 전에 최종 가전 및 가구 가동 상태를 어떻게 점검하는 것이 유리한가요?</h3>
+        <p>
+          모든 세탁기, 에어컨, 셋톱박스의 전원 연결 상태 및 급배수관 누수 여부를 작업 인부들이 철수하기 전 현장에서 직접 공동 작동 테스트를 거치는 것이 안전합니다. 가재 배치가 종료되고 완벽한 동작 확인 서명을 남기기 전 점검하는 과정이 사후 가전 오작동 책임 분쟁을 원천 봉쇄하는 가장 강력한 수단입니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q7. 룸 이사 준비 단계에서 불필요한 대형 가재를 지자체 폐기물 스티커 부착 후 버리는 적절한 타이밍은 언제인가요?</h3>
+        <p>
+          이사 당일 오전에 폐기 장소로 이송하는 것이 작업자들의 하역 동선 확보와 공간 확보 차원에서 가장 효과적입니다. 미리 관할 구청 홈페이지나 지정 편의점을 통해 대상 가구 규격에 부합하는 대형 폐기물 스티커를 발급받은 뒤 상차 작업 직전 배출 처리를 마치는 방식을 모범 추천으로 제시합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q8. 귀중품이나 고가 미술품, 현금성 자산의 손실 방지를 위한 밀봉 수송 노하우는 무엇인가요?</h3>
+        <p>
+          노트북, 보석, 명품 핸드백 및 통장 실물 등의 초고가 소형 귀중 재산은 이사 업체의 상용 박스에 혼합하여 담지 않는 것이 불문율입니다. 사전에 가입 고객 본인의 개인 차량 트렁크에 선제 적치하여 밀봉해 두고 직접 현장에서 이동 보관 및 핸들링을 도맡는 것만이 예외 없는 100퍼센트 분실 원천 봉쇄 기법입니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q9. 가구나 주택 손상 방지를 위해 출입구 주변 바닥에 까는 이른바 텐텐지 플라스틱 보양재 설치 의무가 있나요?</h3>
+        <p>
+          정식 허가 면허를 획득하여 전문적으로 영업 활동을 영위하는 이사 주선 업체라면 작업 개시와 동시에 엘리베이터 통로 및 현관 바닥 전체에 충격 완화용 보양 판넬(PP 보드지)을 조밀하게 포설하는 의무적 보양 공정을 기본 장착하고 작업을 개시해야 마땅합니다.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 25px;">
+        <h3 style="margin-top: 15px;">Q10. 이웃 거주 세대들에 이사에 따른 소음 발생 양해를 구하는 원만한 소통 예절 가이드는 무엇인가요?</h3>
+        <p>
+          작업 3일 전 승강기 내부에 규격화된 주거 이동 안내문을 정중히 부착해 양해를 구하고, 양옆 및 위아래 인접 세대에는 소음 발생 집중 시간대를 사전에 정중히 고지하는 것이 깔끔한 첫걸음입니다. 특히 전입지 관리 사무소의 규정에 맞춰 일요일 등의 극소음 시간대 회피 방안을 사전에 관철해 조율해 두어야 원만합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 이사 준비 체크리스트 섹션 (체류시간 극대화용) -->
+    <section>
+      <h2>안전한 주거 이전 실천 체크리스트 (달성률 트래커)</h2>
+      <p>
+        각 이사 단계별 필히 진행해야 할 핵심 과제를 수록한 양방향 자가 점검표입니다. 각 체크박스를 선택하시면 전체 일정의 누적 달성 지표가 가시적으로 업데이트되어 한눈에 파악할 수 있습니다.
+      </p>
+
+      <div class="checklist-wrap">
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-1" onchange="updateChecklistProgress()">
+          <span>[이사 D-30] 사용 가재도구 중 폐기 처분할 항목 선별 및 무료 견적 비교 의뢰</span>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-2" onchange="updateChecklistProgress()">
+          <span>[이사 D-14] 주소이전 일괄 등록 서비스 청구 및 수도/가스 계량 요금 최종 정산 예약</span>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-3" onchange="updateChecklistProgress()">
+          <span>[이사 D-7] 이사 당일 인터넷 신규 가입 혜택 조회를 통한 현금지원 사은품 제휴 계약 확정</span>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-4" onchange="updateChecklistProgress()">
+          <span>[이사 D-3] 아파트 관리 사무소 전용 엘리베이터 점유 가동 시간 확정 통보 및 요금 예납</span>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-5" onchange="updateChecklistProgress()">
+          <span>[이사 D-1] 노트북 등 고가 전자기기 분리 보관 및 귀중품 본인 직속 차량 이관 밀봉 완료</span>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="chk-6" onchange="updateChecklistProgress()">
+          <span>[이사 D-Day] 전기 계량기 검침 데이터 수납 마무리 및 파손 유무 크로스 체크 후 서명 송금</span>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="checklist-progress-bar"></div>
+      </div>
+      <p id="checklist-progress-text" style="font-weight: bold; margin-top: 10px; color: var(--accent-color);">
+        체크리스트 달성도: 0% (0/6)
+      </p>
+    </section>
+
+    <!-- 섹션 9: 온라인 상담 신청 폼 -->
+    <section id="form">
+      <h2>일산 룸 이사 실시간 무료 상세 견적 신청</h2>
+      <p>
+        현장 답사를 가기 전, 온라인을 통해 세밀한 주거 환경 요소를 일러주시면 전문가가 정교하게 예상 소요를 산정하여 다이렉트로 정밀 가격 가이드를 회신해 드립니다.
+      </p>
+
+      <form action="#" method="post" onsubmit="alert('상담 신청 접수가 안전하게 완료되었습니다.'); return false;">
+        <div class="grid-2">
+          <div>
+            <div class="form-group">
+              <label for="frm-name">고객명</label>
+              <input type="text" id="frm-name" class="form-control" placeholder="성함을 기입해 주세요" required>
+            </div>
+            <div class="form-group">
+              <label for="frm-tel">전화번호</label>
+              <input type="tel" id="frm-tel" class="form-control" placeholder="연락 가능한 휴대전화 번호" required>
+            </div>
+            <div class="form-group">
+              <label for="frm-type">신청하는 이동 방식 종류</label>
+              <select id="frm-type" class="form-control">
+                <option value="gen">수속 위주의 일반 이동</option>
+                <option value="semi">가장 선호되는 반포장 이동</option>
+                <option value="pack">프리미엄 원스톱 포장 이동</option>
+                <option value="store">보관 연계 특화 운송</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <label for="frm-date">희망 주거 이전 예정일</label>
+              <input type="date" id="frm-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="frm-start">출발지 지번 및 상세 주소 (동호수 제외 입력 가능)</label>
+              <input type="text" id="frm-start" class="form-control" placeholder="예: 경기도 고양시 일산동구 장항동" required>
+            </div>
+            <div class="form-group">
+              <label for="frm-end">도착지 예정 주소 및 구조</label>
+              <input type="text" id="frm-end" class="form-control" placeholder="예: 경기도 고양시 일산서구 대화동" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="frm-memo">기타 가구별 특수 옵션 기재 (돌침대, 피아노, 냉장고 양문형 분해 조립 요구 등)</label>
+          <textarea id="frm-memo" class="form-control" rows="4" placeholder="특수 고가 가구 내역을 기입해 주시면 오차 없는 완벽한 사전 단가 산출이 보장됩니다."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">무료 정밀 견적 및 결합 혜택 상담 예약하기</button>
+      </form>
+    </section>
+
+    <!-- 검색 엔진 노출용 키워드 군 -->
+    <div class="keyword-cloud">
+      <strong>관련 검색 참조 키워드 색인:</strong> 일산 룸 이사, 고양시 원룸 보관, 투룸 이사 평균 가격, 오피스텔 이사 견적 비용, 자가 이사비 계산기, 스마트폰 이사 앱 추천, 인터넷가입 사은품 지원금, 인터넷 현금지원 이벤트, 디시인사이드 이사 후기, 보배드림 추천 업체, 에펨코리아 내돈내산 싼곳, 구글 이사 전문 사이트, 네이버 가성비 저렴한곳 순위, 제미나이 주거 컨설팅, 챗지피티 이삿짐 분석, Gemini ChatGPT 인공지능 배차 시뮬레이터.
+    </div>
+  </main>
+
+  <footer>
+    <div class="header-container">
+      <p>일산 룸 이사 전문 센터 – 주소: 경기도 고양시 일산동구 중앙로 123 | 대표 연락처: 1588-XXXX</p>
+      <p>이용약관 및 개인정보 처리방침 | 본 사이트에 제공된 정보와 계산기는 통계적 추정치이며 법적 분쟁 시 귀속 책임의 기준이 될 수 없습니다.</p>
+      <p>&copy; 2026 Ilsan Room Move Center. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Moving Cost Calculator Logic
+    function updateMovingCost() {
+      const roomType = document.getElementById('room-type').value;
+      const distance = parseFloat(document.getElementById('distance-slider').value);
+      const ladder = document.getElementById('ladder-option').value;
+      const dateType = document.getElementById('date-type').value;
+      
+      const optAssemble = document.getElementById('opt-assemble').checked;
+      const optStorage = document.getElementById('opt-storage').checked;
+      const optCleaning = document.getElementById('opt-cleaning').checked;
+
+      let baseCost = 0;
+      if (roomType === 'room-general') baseCost = 150000;
+      else if (roomType === 'room-semi') baseCost = 250000;
+      else if (roomType === 'room-pack') baseCost = 350000;
+      else if (roomType === 'two-semi') baseCost = 450000;
+      else if (roomType === 'two-pack') baseCost = 600000;
+
+      // Distance Fee: Free up to 10km, thereafter 3,000 KRW per km
+      let distCost = 0;
+      if (distance > 10) {
+        distCost = (distance - 10) * 3000;
+      }
+
+      // Ladder Truck Option
+      let ladderCost = 0;
+      if (ladder === 'start' || ladder === 'end') ladderCost = 100000;
+      else if (ladder === 'both') ladderCost = 200000;
+
+      // Date Peak Season Factor
+      let dateCost = 0;
+      if (dateType === 'weekend') dateCost = 50000;
+      else if (dateType === 'peak') dateCost = 100000;
+
+      // Additional Options
+      let optCost = 0;
+      if (optAssemble) optCost += 50000;
+      if (optStorage) optCost += 100000;
+      if (optCleaning) optCost += 120000;
+
+      const totalCost = baseCost + distCost + ladderCost + dateCost + optCost;
+
+      document.getElementById('calc-total-cost').innerText = totalCost.toLocaleString() + ' 원';
+      document.getElementById('distance-value').innerText = distance + ' km';
+    }
+
+    // Volume Estimator Calculator Logic
+    const items = {
+      bed: { cbm: 1.5, count: 0 },
+      fridge: { cbm: 1.0, count: 0 },
+      washer: { cbm: 0.8, count: 0 },
+      wardrobe: { cbm: 1.2, count: 0 },
+      desk: { cbm: 0.6, count: 0 },
+      box: { cbm: 0.15, count: 0 }
+    };
+
+    function updateItemCount(itemKey, change) {
+      items[itemKey].count = Math.max(0, items[itemKey].count + change);
+      document.getElementById(`item-count-${itemKey}`).innerText = items[itemKey].count;
+      calculateCBM();
+    }
+
+    function calculateCBM() {
+      let totalCBM = 0;
+      for (const key in items) {
+        totalCBM += items[key].count * items[key].cbm;
+      }
+      totalCBM = Math.round(totalCBM * 100) / 100;
+      document.getElementById('total-cbm').innerText = totalCBM + ' CBM';
+
+      let recommendation = '';
+      let estCost = '';
+
+      if (totalCBM === 0) {
+        recommendation = '물품을 추가해 주세요.';
+        estCost = '0 원';
+      } else if (totalCBM <= 1.5) {
+        recommendation = '라보 화물차 또는 다마스 수송 추천 (짐이 아주 미미한 경우)';
+        estCost = '60,000원 ~ 100,000원 선';
+      } else if (totalCBM <= 5.0) {
+        recommendation = '표준 1톤 카고/탑차 수배 추천 (일반 원룸 짐 분량)';
+        estCost = '150,000원 ~ 350,000원 선';
+      } else if (totalCBM <= 12.0) {
+        recommendation = '2.5톤 중형 탑차 배치 요망 (투룸 및 맥시멀 원룸 수준)';
+        estCost = '400,000원 ~ 650,000원 선';
+      } else {
+        recommendation = '5톤 대형 탑차 주선 혹은 복수 차량 동시 투입 조율 필요';
+        estCost = '800,000원 이상 (방문 견적 필수)';
+      }
+
+      document.getElementById('truck-rec').innerText = recommendation;
+      document.getElementById('truck-est-cost').innerText = estCost;
+    }
+
+    // Interactive Checklist Tracker
+    function updateChecklistProgress() {
+      const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+      let checkedCount = 0;
+
+      checkboxes.forEach(cb => {
+        const parent = cb.closest('.checklist-item');
+        if (cb.checked) {
+          checkedCount++;
+          parent.classList.add('checked');
+        } else {
+          parent.classList.remove('checked');
+        }
+      });
+
+      const total = checkboxes.length;
+      const percent = total ? Math.round((checkedCount / total) * 100) : 0;
+
+      document.getElementById('checklist-progress-bar').style.width = percent + '%';
+      document.getElementById('checklist-progress-text').innerText = 
+        '체크리스트 달성도: ' + percent + '% (' + checkedCount + '/' + total + ')';
+    }
+
+    // Initialize logic on load
+    window.onload = function() {
+      updateMovingCost();
+      calculateCBM();
+      updateChecklistProgress();
+    };
+  </script>
+
+	
 
 
 
